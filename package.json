@@ -1,0 +1,42 @@
+{
+  "name": "lxn",
+  "version": "0.0.1",
+  "description": "An lxn implementation for JavaScript",
+  "main": "dist/lxn.cjs.js",
+  "module": "dist/lxn.es.js",
+  "jsnext:main": "dist/lxn.es.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "lxn",
+    "l10n",
+    "localization"
+  ],
+  "scripts": {
+    "generate": "mpackc js --typedecls src/internal/catalog.mpack",
+    "clean": "rm -rf dist/* build/",
+    "prebuild": "rm -rf dist/*",
+    "build": "rollup -c rollup.lib.js",
+    "pretest": "rm -rf build/",
+    "test": "rollup -c rollup.test.js && testsome build/tests.js",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "tsne",
+  "license": "MIT",
+  "homepage": "https://github.com/liblxn/lxn-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liblxn/lxn-js.git"
+  },
+  "devDependencies": {
+    "rollup": "^0.50.0",
+    "rollup-plugin-tsc": "^1.1.5",
+    "testsome": "^1.0.0"
+  },
+  "dependencies": {
+    "messagepack": "^1.0.4"
+  }
+}
