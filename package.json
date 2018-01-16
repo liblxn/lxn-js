@@ -32,8 +32,8 @@
     "url": "git+https://github.com/liblxn/lxn-js.git"
   },
   "devDependencies": {
-    "rollup": "^0.50.0",
-    "rollup-plugin-tsc": "^1.1.5",
+    "rollup": "^0.54.0",
+    "rollup-plugin-tsc": "^1.1.6",
     "testsome": "^1.0.0"
   },
   "dependencies": {
