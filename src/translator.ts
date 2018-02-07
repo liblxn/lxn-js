@@ -85,7 +85,7 @@ function replace(r: Replacement, ctx: Context, loc: Locale): string {
 		return replPlural(v, r.key, ctx, r.details as PluralDetails, loc);
 
 	case ReplacementType.SelectReplacement:
-		return formatMsg((r.details as SelectDetails).cases[v.toString()] ||(r.details as SelectDetails).cases[(r.details as SelectDetails).fallback], ctx, loc)
+		return formatMsg((r.details as SelectDetails).cases[v.toString()] || (r.details as SelectDetails).cases[(r.details as SelectDetails).fallback], ctx, loc)
 
 	default:
 		return unsupportedReplType(r.type);
