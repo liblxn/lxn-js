@@ -32,11 +32,11 @@
     "url": "git+https://github.com/liblxn/lxn-js.git"
   },
   "devDependencies": {
-    "rollup": "^0.54.0",
+    "lxn-schema": "^1.0.0",
+    "messagepack": "^1.0.5",
+    "rollup": "^0.55.3",
+    "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-tsc": "^1.1.6",
     "testsome": "^1.0.0"
-  },
-  "dependencies": {
-    "messagepack": "^1.0.4"
   }
 }

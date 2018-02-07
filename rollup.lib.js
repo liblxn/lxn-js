@@ -9,9 +9,6 @@ export default {
 		{file: pkg["module"], format: "es", sourcemap: true},
 		{file: pkg["main"], format: "cjs", sourcemap: true},
 	],
-	external: [
-		"messagepack",
-	],
 	plugins: [
 		require("rollup-plugin-tsc")({
 			compilerOptions: {
@@ -19,6 +16,9 @@ export default {
 				declaration: true,
 				declarationDir: path.dirname(pkg["types"]),
 			},
+		}),
+		require("rollup-plugin-node-resolve")({
+			modulesOnly: true
 		}),
 	],
 };

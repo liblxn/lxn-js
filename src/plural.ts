@@ -1,4 +1,4 @@
-import {Plural, PluralRule, PluralTag, Connective, Operand, NumberFormat} from "./internal/catalog";
+import {Plural, PluralRule, PluralTag, Connective, Operand, NumberFormat} from "lxn-schema";
 import {digits, Digits} from "./number";
 
 

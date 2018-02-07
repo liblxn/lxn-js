@@ -1,4 +1,4 @@
-import {NumberFormat, Symbols} from "./internal/catalog";
+import {NumberFormat, Symbols} from "lxn-schema";
 
 
 
@@ -84,7 +84,7 @@ function fmtFrac(digits: number[], group: number, symb: Symbols): string {
 
 function affix(s: string, symb: Symbols, curr?: string): string {
 	// We need to use a function here for the second parameter
-	// in String.replace since for a string given several custom
+	// in String.replace since for a string several custom
 	// replacements take place (e.g. $$ -> $).
 	if(curr) {
 		s = s.replace("\u00a4", () => curr); // ¤

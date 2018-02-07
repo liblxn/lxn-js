@@ -13,7 +13,7 @@ import {
 	PluralDetails,
 	MoneyDetails,
 	SelectDetails,
-} from "./internal/catalog";
+} from "lxn-schema";
 
 
 
