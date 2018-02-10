@@ -1,8 +1,5 @@
 import {test} from "testsome";
 import {encode} from "messagepack";
-import {Translator} from "./translator";
-import {readCatalog} from "./translator";
-import {locale} from "./util_test";
 import {
 	Catalog,
 	Locale,
@@ -11,7 +8,10 @@ import {
 	PluralTag,
 	PluralType,
 	Operand,
-} from "./internal/catalog";
+} from "lxn-schema";
+import {Translator} from "./translator";
+import {readCatalog} from "./translator";
+import {locale} from "./util_test";
 
 
 

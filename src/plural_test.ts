@@ -1,6 +1,6 @@
 import {test} from "testsome";
+import {PluralTag, Operand, Connective} from "lxn-schema";
 import {pluralTag} from "./plural";
-import {PluralTag, Operand, Connective} from "./internal/catalog";
 import {numberFormat} from "./util_test";
 
 

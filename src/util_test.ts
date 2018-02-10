@@ -1,4 +1,4 @@
-import {Locale, NumberFormat} from "./internal/catalog";
+import {Locale, NumberFormat} from "lxn-schema";
 
 
 
