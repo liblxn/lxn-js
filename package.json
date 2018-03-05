@@ -1,6 +1,6 @@
 {
   "name": "lxn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An lxn implementation for JavaScript",
   "main": "dist/lxn.cjs.js",
   "module": "dist/lxn.es.js",
