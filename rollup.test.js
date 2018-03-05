@@ -8,13 +8,13 @@ export default {
 		"testsome",
 	],
 	plugins: [
+		require("rollup-plugin-node-resolve")({
+			modulesOnly: true
+		}),
 		require("rollup-plugin-tsc")({
 			compilerOptions: {
 				noUnusedLocals: true,
 			},
-		}),
-		require("rollup-plugin-node-resolve")({
-			modulesOnly: true
 		}),
 	],
 };

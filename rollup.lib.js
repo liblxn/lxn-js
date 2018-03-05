@@ -10,15 +10,15 @@ export default {
 		{file: pkg["main"], format: "cjs", sourcemap: true},
 	],
 	plugins: [
+		require("rollup-plugin-node-resolve")({
+			modulesOnly: true
+		}),
 		require("rollup-plugin-tsc")({
 			compilerOptions: {
 				noUnusedLocals: true,
 				declaration: true,
 				declarationDir: path.dirname(pkg["types"]),
 			},
-		}),
-		require("rollup-plugin-node-resolve")({
-			modulesOnly: true
 		}),
 	],
 };
