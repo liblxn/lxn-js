@@ -33,10 +33,10 @@
   },
   "devDependencies": {
     "lxn-schema": "^1.0.4",
-    "messagepack": "^1.1.6",
-    "rollup": "^0.57.1",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-tsc": "^1.1.8",
-    "testsome": "^1.0.1"
+    "messagepack": "^1.1.8",
+    "rollup": "^0.68.2",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-tsc": "^1.1.15",
+    "testsome": "^1.0.2"
   }
 }
